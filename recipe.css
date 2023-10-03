@@ -1,0 +1,292 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+header{height: 60px;
+width:100%;
+background-color:black !important;
+}
+.navbar{display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.navbar li{list-style-type: none;
+float: left;
+margin: 15px;
+color:white;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;}
+.navbar li a:hover{color:crimson;}
+
+.navbar li a{color:white;
+    text-decoration: none;}
+    .logo{text-decoration: none;
+    color:gold;
+    font-size: 20px;
+font-weight: bold;
+
+margin: 0 15px;
+}
+.togglebtn i{padding: 15px;
+    color:white;
+display: none;
+cursor: pointer;}
+.togglebtn i:hover{color:crimson;}
+.dropdown-menu{background-color: aqua;
+    height:auto;
+    width:130px;
+    text-align: center;
+    position: absolute;
+    right:0;
+    top:60px;
+display: none ;
+}
+.dropdown-menu.active{display: block;
+}
+.close{display: flex;
+justify-content: end;
+padding: 15px;}
+.close i{cursor: pointer;}
+.close i:hover{color:white;}
+.dropdown-menu li{list-style-type: none;
+padding: 10px 0;
+font-size: 15px;
+}
+.dropdown-menu li a{color:black;
+    text-decoration: none;
+    font-weight: bold;}
+    .dropdown-menu li :hover{color:white;}
+    @media(max-width:996px){
+    .logo{margin-top: 15px;}
+        .navbar li{display: none;}
+        .togglebtn i{display: block;
+            margin-top: 15px;}
+
+    }
+    /*--Home section--*/
+
+    .Home{height:100vh;
+        width:100%;
+        background-image:url(images/tasty4.jpg) ;
+        background-size: 80vh;
+    background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: flex-start;
+align-items: center;}
+.search{height:40px;
+    width:auto;
+background-color: blueviolet;
+text-align: center;
+margin-left: 30px;
+border-radius: 20px;
+display: flex;}
+.search-bar{width:300px;
+height:40px;
+border: none;
+border-bottom-left-radius: 15px;
+border-top-left-radius:15px;
+color:black;
+font-weight: bold;
+font-size: 15px;
+padding: 5px;
+outline: none;}
+.Search-btn{height:40px;
+width:100px;
+border: none;
+border-bottom-right-radius:15px;
+border-top-right-radius:15px;
+background-color: #fff;
+color:black;
+font-weight: bold;
+font-size: 18px;
+cursor: pointer;}
+.Search-btn:hover{color:crimson;}
+
+/*--category section--*/
+
+.food-Categories{height: 100%;
+width:100%;}
+.heading{height:100px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;}
+.heading h1{font-size: 40px;
+font-weight: bold;
+margin: 10px;}
+.form{font-size: 22px;
+    padding-top:5px;
+font-weight: bold;}
+.food{width:200px;
+height:30px;
+color:black;
+margin-right: 20px;
+margin-bottom: 20px;
+font-weight: 300;}
+.Categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+
+
+}
+.Items{height:350px;
+width:350px;
+background-color:rgb(108, 187, 187);
+margin:13px;
+transition: all 0.5s ease;}
+.Items:hover{transform: translateY(-13px);}
+.food-image{height:50%;
+width:100%;}
+.food-image img{height: 100%;
+width:100%;}
+.food-name {font-size: 30px;
+text-align: center;
+padding: 5px;}
+.food-info{font-size: 20px;
+margin: 7px;}
+.Read-div{text-align: center;}
+.Read-div a{text-decoration: none;
+color:red;
+text-align: center;
+font-size: 20px;
+font-weight: bold;}
+.contact{height:100vh;
+width:100%;
+background-image: url(images/contact-background.jpg);
+background-position:left;
+background-repeat: no-repeat;
+background-size: cover;}
+#hell{ display:flex;
+    align-items: flex-end;
+flex-direction: column;;}
+#hell h2{font-size: 35px;
+color:white;
+text-align: end;
+padding:25px; }
+.contact-inner{background-color: pink;
+height:50vh;
+width:30%;
+margin:35px 30px;
+
+}
+form{margin:5px 10px;
+padding-top: 20px;
+font-size: 20px;
+font-weight: bold;}
+.contact input ,form label,textarea{margin:5px 10px;}
+.submit,.reset{background-color: crimson;
+color:white;
+width:80px;
+height: 25px;
+text-align: center;
+font-weight: bold;
+border-radius: 12px;
+cursor: pointer;}
+.reset:hover{background-color:rgb(30, 148, 158);
+color: black;}
+.submit:hover{background-color:rgb(30, 148, 158);
+    color: black;}
+    footer{height:100vh;
+    width:100%;
+background-color:#fff;}
+
+@media(max-width:776px){
+    .contact textarea{ width:80%;}
+    .contact-inner{height: auto;}
+
+}
+.container1{height:80px;
+width:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color:crimson;}
+.container1 h1{font-size: 35px;}
+
+.container2{display: flex;
+justify-content: center;
+margin: 30px 0;}
+.about-info{
+    height:300px;
+    width:300px;
+    margin: 20px;
+    border-color: blueviolet;
+}
+.about-info li{list-style: none;
+font-size: 20px;
+padding: 10px;
+font-weight: bold;}
+.about-info a{text-decoration: none;
+color:black;
+
+font-weight: bold;}
+
+.about-info h2{ color:crimson; font-size:30px;
+margin: 10px;}
+.about-info p{font-size: 20px;
+font-weight: bold;}
+.social-links{display: flex;
+justify-content: center;}
+.container3{text-align: center;}
+.social-links li {list-style-type: none;
+float:left;
+margin :15px;}
+.social-links a{color:black;}
+.container4{text-align: center;}
+.container4 p{margin: 15px 0;
+font-weight: bold;}
+/* recipe page */
+.link{height: 100%;
+width:100%;
+background-color: pink;
+padding: 10px;
+}
+.Recipe-img-area{height:30%;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.hell1{text-align: center;}
+.hell2{font-size:32px;
+margin: 20px 0;}
+.hell3{font-size:20px;
+font-weight: bold;
+margin:20px 0}
+.hen{font-size: 25px;
+margin:18px 0;}
+.Chicken ul li{padding:15px;}
+.Burger{height: 100%;
+width:100%;
+background: pink;}
+.intro{height:300px;
+width:100%;
+display: flex;
+justify-content: center;}
+.info{height:400px;
+width:400px;}
+.info img{height: 60%;
+width: 100%;
+margin-top: 20px;}
+.name{font-size:40px;
+text-align: center;}
+.ingredients{ padding: 10px;}
+.ingredients h1{font-size: 40px;
+margin: 20px 0;}
+.ingredients li{font-size: 20px;
+font-weight: bold;
+padding: 10px;}
+.Procedure{padding: 10px;}
+.Procedure h1{font-size:40px;
+    margin:20px 0;}
+    .Procedure li{font-size: 20px;
+    font-weight:bold;
+padding:10px;}
+.tasty{font-size:25px ;
+color:red;}
